@@ -22,8 +22,8 @@ export default function Portfolio() {
 
           {/* right: navigate */}
           <nav className="flex gap-6 text-sm font-medium text-[#FFCC33]">
-            <a href="#top" className="hover:text-white transition">Go to Top</a>
-            <a href="#about" className="hover:text-white transition">About Jehoon</a>
+            <a href="#top" className="hover:text-white transition">Top</a>
+            <a href="#about" className="hover:text-white transition">About</a>
             <a href="#projects" className="hover:text-white transition">Projects</a>
             <a href="#skills" className="hover:text-white transition">Skills</a>
           </nav>
