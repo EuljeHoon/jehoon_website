@@ -3,13 +3,33 @@ import { Button } from "@/components/ui/button";
 
 export default function Portfolio() {
   return (
-    <main className="min-h-screen bg-cover bg-center bg-repeat text-[#1B1F3B] p-8"
+    <main className="pt-24 min-h-screen bg-cover bg-center bg-repeat text-[#1B1F3B] p-8"
     style={{
       backgroundImage: "url('/umn_background_light.png')"
       }}
     >
+      <header className="fixed top-0 left-0 w-full bg-[#7A0019] shadow-md z-50">
+        <div className="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
+          
+          {/* left: logo and name */}
+          <div className="flex items-center gap-2">
+            <img src="/logo/umn_logo.png" alt="UMN Logo" className="h-6 md:h-8 object-contain" />
+            <span className="text-[#FFCC33] text-lg md:text-xl font-bold tracking-tight font-[var(--font-poppins)]">Jehoon Park</span>
+          </div>
+
+          {/* right: navigate */}
+          <nav className="flex gap-6 text-sm font-medium text-[#FFCC33]">
+            <a href="#top" className="hover:text-white transition">Go to Top</a>
+            <a href="#about" className="hover:text-white transition">About Jehoon</a>
+            <a href="#projects" className="hover:text-white transition">Projects</a>
+            <a href="#skills" className="hover:text-white transition">Skills</a>
+          </nav>
+        </div>
+      </header>
+
+
       {/* Hero Section */}
-      <section className="text-center py-16">
+      <section id = "top" className="text-center py-16">
         <div className="flex justify-center items-center gap-3">
           <h1 className="text-4xl font-bold">Jehoon Park</h1>
           <img src = "/logo/umn_logo.png" alt = "University of Minnesota logo" className = "h-8 md:h-10 object-contain"/>
@@ -34,8 +54,8 @@ export default function Portfolio() {
       </section>
 
       {/* About Section */}
-      <section className="max-w-5xl mx-auto py-12 grid md:grid-cols-2 gap-2 items-center">
-        {/* 왼쪽: 프로필 사진 */}
+      <section id = "about" className="scroll-mt-10 max-w-5xl mx-auto py-12 grid md:grid-cols-2 gap-2 items-center">
+        {/* Left: Picture */}
         <div className="flex justify-center">
           <div className = "overflow-hidden shadow-md rounded-xl"
           style={{
@@ -50,7 +70,7 @@ export default function Portfolio() {
           </div>
         </div>
 
-        {/* 오른쪽: 자기소개 텍스트 */}
+        {/* Right: Introduction Text */}
         <div>
           <div className="text-[#7A0019]">
             <h2 className="text-2xl font-semibold mb-4">About Me</h2>
@@ -68,7 +88,7 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Section */}
-      <section className="max-w-4xl mx-auto py-12">
+      <section id = "projects" className="scroll-mt-5 max-w-4xl mx-auto py-12">
         <div className="text-[#7A0019]">
           <h2 className="text-2xl font-semibold mb-8">Projects</h2>
         </div>
@@ -209,8 +229,9 @@ export default function Portfolio() {
           </a>
         </div>
       </section>
-
-      <section className="max-w-4xl mx-auto py-12">
+      
+      {/* Skills section */}
+      <section id = "skills" className="scroll-mt-10 max-w-4xl mx-auto py-12">
         <div className="text-[#7A0019]">
           <h2 className="text-2xl font-semibold mb-6 text-left">Skills</h2>
         </div>
