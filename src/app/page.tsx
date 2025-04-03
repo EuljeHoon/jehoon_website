@@ -33,7 +33,7 @@ export default function Portfolio() {
 
 
       {/* Hero Section */}
-      <section id = "top" className="text-center py-16">
+      <section id = "top" className="scroll-mt-10 text-center py-16">
         <div className="flex justify-center items-center gap-3">
           <h1 className="text-4xl font-bold">Jehoon Park</h1>
           <img src = "/logo/umn_logo.png" alt = "University of Minnesota logo" className = "h-8 md:h-10 object-contain"/>
@@ -58,7 +58,7 @@ export default function Portfolio() {
       </section>
 
       {/* About Section */}
-      <section id = "about" className="scroll-mt-10 max-w-5xl mx-auto py-12 grid md:grid-cols-2 gap-2 items-center">
+      <section id = "about" className="scroll-mt-15 max-w-5xl mx-auto py-12 grid md:grid-cols-2 gap-2 items-center">
         {/* Left: Picture */}
         <div className="flex justify-center">
           <div className = "overflow-hidden shadow-md rounded-xl"
@@ -92,7 +92,7 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Section */}
-      <section id = "projects" className="scroll-mt-5 max-w-4xl mx-auto py-12">
+      <section id = "projects" className="scroll-mt-10 max-w-4xl mx-auto py-12">
         <div className="text-[#7A0019]">
           <h2 className="text-2xl font-semibold mb-8">Projects</h2>
         </div>
