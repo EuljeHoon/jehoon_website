@@ -8,13 +8,16 @@ export default function Portfolio() {
       backgroundImage: "url('/umn_background_light.png')"
       }}
     >
+      {/* header */}
       <header className="fixed top-0 left-0 w-full bg-[#7A0019] shadow-md z-50">
-        <div className="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
+        <div className="px-6 py-3 flex justify-between items-center">
           
           {/* left: logo and name */}
           <div className="flex items-center gap-2">
             <img src="/logo/umn_logo.png" alt="UMN Logo" className="h-6 md:h-8 object-contain" />
-            <span className="text-[#FFCC33] text-lg md:text-xl font-bold tracking-tight font-[var(--font-poppins)]">Jehoon Park</span>
+            <span className="text-[#FFCC33] text-lg md:text-xl font-bold tracking-tight font-[var(--font-poppins)]">
+              Jehoon Park
+            </span>
           </div>
 
           {/* right: navigate */}
@@ -26,6 +29,7 @@ export default function Portfolio() {
           </nav>
         </div>
       </header>
+
 
 
       {/* Hero Section */}
