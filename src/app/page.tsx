@@ -1,4 +1,5 @@
 import React from "react";
+import ContactForm from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
 
 export default function Portfolio() {
@@ -10,25 +11,28 @@ export default function Portfolio() {
     >
       {/* header */}
       <header className="fixed top-0 left-0 w-full bg-[#7A0019] shadow-md z-50">
-        <div className="px-6 py-3 flex justify-between items-center">
+        <div className="px-4 sm:px-8 py-3 flex justify-between items-center">
           
-          {/* left: logo and name */}
+          {/* logo and name */}
           <div className="flex items-center gap-2">
-            <img src="/logo/umn_logo.png" alt="UMN Logo" className="h-6 md:h-8 object-contain" />
-            <span className="text-[#FFCC33] text-lg md:text-xl font-bold tracking-tight font-[var(--font-poppins)]">
+            <img src="/logo/umn_logo.png" alt="UMN Logo" className="h-6 sm:h-8 object-contain" />
+            <span className="text-[#FFCC33] text-base sm:text-lg font-semibold tracking-tight font-[var(--font-poppins)]">
               Jehoon Park
             </span>
           </div>
 
-          {/* right: navigate */}
-          <nav className="flex gap-6 text-sm font-medium text-[#FFCC33]">
+          {/* navigate function */}
+          <nav className="flex gap-4 sm:gap-6 text-xs sm:text-sm font-medium text-[#FFCC33]">
             <a href="#top" className="hover:text-white transition">Top</a>
             <a href="#about" className="hover:text-white transition">About</a>
             <a href="#projects" className="hover:text-white transition">Projects</a>
             <a href="#skills" className="hover:text-white transition">Skills</a>
+            <a href="#contact" className="hover:text-white transition">Contact</a>
           </nav>
         </div>
       </header>
+
+
 
 
 
@@ -45,11 +49,11 @@ export default function Portfolio() {
         A Computer Science student with broad interests across the stack — from frontend design to backend logic and everything in between.
         </p>
         <div className="mt-6 flex justify-center gap-4">
+          <a href = "https://github.com/EuljeHoon" download target = "_blank" rel = "noopener noreferrer">
+            <Button className="bg-[#7A0019] hover:bg-[#FFCC33] text-white">GitHub</Button>
+          </a>
           <a href = "/Jehoon_s_Resume.pdf" download target = "_blank" rel = "noopener noreferrer">
             <Button className="bg-[#7A0019] hover:bg-[#FFCC33] text-white">Download Resume</Button>
-          </a>
-          <a href = "https://github.com/EuljeHoon" download target = "_blank" rel = "noopener noreferrer">
-            <Button className="bg-[#FFCC33] hover:bg-[#7A0019] text-black">GitHub</Button>
           </a>
           <a href = "https://www.linkedin.com/in/jehoon0213/" download target = "_blank" rel = "noopener noreferrer">
             <Button className="bg-[#7A0019] hover:bg-[#FFCC33] text-white">LinkedIn</Button>
@@ -272,6 +276,9 @@ export default function Portfolio() {
             </p>
           </div>
         </div>
+      </section>
+      <section id="contact" className="scroll-mt-12 max-w-5xl mx-auto py-12">
+        <ContactForm />
       </section>
 
     </main>
