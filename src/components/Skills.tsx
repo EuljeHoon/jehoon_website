@@ -11,7 +11,7 @@ export default function About() {
           <div className="bg-white p-6 rounded-2xl shadow-md">
             <h3 className="font-bold text-[#1B1F3B] mb-2">Programming Languages</h3>
             <p className="text-sm text-gray-800">
-              C, Python, Java, Ocaml, Assembly, JavaScript, TypeScript, HTML/CSS
+              Java, C, Python, Ocaml, Assembly, JavaScript, TypeScript, HTML/CSS
             </p>
           </div>
 
@@ -19,7 +19,7 @@ export default function About() {
           <div className="bg-white p-6 rounded-2xl shadow-md">
             <h3 className="font-bold text-[#1B1F3B] mb-2">Frameworks & Libraries</h3>
             <p className="text-sm text-gray-800">
-              React, JUnit
+              Spring Boot, React, JUnit
             </p>
           </div>
 
