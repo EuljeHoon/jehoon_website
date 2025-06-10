@@ -11,7 +11,7 @@ export default function About() {
           <div className="bg-white p-6 rounded-2xl shadow-md">
             <h3 className="font-bold text-[#1B1F3B] mb-2">Programming Languages</h3>
             <p className="text-sm text-gray-800">
-              Java, C, Python, Ocaml, Assembly, JavaScript, TypeScript, HTML/CSS
+              Python, Java, C, Assembly, Ocaml, TypeScript, JavaScript
             </p>
           </div>
 
@@ -19,7 +19,7 @@ export default function About() {
           <div className="bg-white p-6 rounded-2xl shadow-md">
             <h3 className="font-bold text-[#1B1F3B] mb-2">Frameworks & Libraries</h3>
             <p className="text-sm text-gray-800">
-              Spring Boot, React, JUnit
+              Spring Boot, FastAPI, Node.js, GCP, React
             </p>
           </div>
 
@@ -35,7 +35,7 @@ export default function About() {
           <div className="bg-white p-6 rounded-2xl shadow-md">
             <h3 className="font-bold text-[#1B1F3B] mb-2">Relevant Coursework</h3>
             <p className="text-sm text-gray-800">
-              Data Structures and Algorithms, Object-Oriented Programming, Machine Architecture and Organization, Advanced Programming Principles
+              Algorithms and Data Structures, Formal Languages and Automata, Data Structures and Algorithms, Object-Oriented Programming, Machine Architecture and Organization, Advanced Programming Principles
             </p>
           </div>
         </div>

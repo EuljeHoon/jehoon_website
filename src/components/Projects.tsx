@@ -7,6 +7,61 @@ export default function Projects() {
           <h2 className="text-2xl font-semibold mb-8">Projects & Experiences</h2>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
+
+          {/* dotori Startup */}
+          <a href = "https://dotori-intro-website.vercel.app/" download target = "_blank" rel = "noopener noreferrer">
+            <div className="relative bg-white p-6 rounded-2xl shadow transition duration-300 hover:bg-[#FFCC33] hover:shadow-lg">
+
+              {/*background blur image*/}
+              <img
+                src="/logo/Main_logo_invisible _back.png"
+                alt="dotori Logo"
+                className="absolute top-1/2 left-1/2 w-40 h-40 -translate-x-1/2 -translate-y-1/2 opacity-13 blur-[1px] pointer-events-none"
+              />
+
+              {/*main content*/}
+              <div className = "relative z-10">
+                <h3 className="text-xl font-bold mb-2">dotori</h3>
+                  <p className="mb-2 text-sm text-gray-700">Software Engineer</p>
+                  <p>
+                    An AI-powered platform for essay feedback and personalized school recommendations for study abroad applicants.
+                  </p>
+                  <ul className="list-disc pl-5 mt-2 text-sm text-gray-800">
+                    <li>Led a 4-person Agile team in the full-stack development of an AI-powered college admissions assistant</li>
+                    <li>Developed both frontend interface and backend API for uploading resumes to Google Cloud Storage, using React and FastAPI.</li>
+                    <li>Built a backend API to safely deliver student information as encrypted or access-controlled JSON payloads.</li>
+                  </ul>
+              </div>
+            </div>
+          </a>
+
+          {/* Poky Project */}
+          <a href = "https://sites.google.com/view/wlee-group/people?authuser=0#h.dolxuabfkzks" target = "_blank" rel = "noopener noreferrer">
+            <div className="relative bg-white p-6 rounded-2xl shadow transition duration-300 hover:bg-[#FFCC33] hover:shadow-lg">
+
+              {/*background blur image*/}
+              <img
+                src="/logo/cuDenver.png"
+                alt="CU Denver Logo"
+                className="absolute top-1/2 left-1/2 w-70 h-40 -translate-x-1/2 -translate-y-1/2 opacity-15 blur-[1px] pointer-events-none"
+              />
+
+              {/*main content*/}
+              <div className = "relative z-10">
+                <h3 className="text-xl font-bold mb-2">Poky Lab (CU Denver research intern)</h3>
+                <p className="mb-2 text-sm text-gray-700">Plug-in Developer</p>
+                <p>
+                  Contributing to OneShotNMR for NMR analysis and GUI development.
+                </p>
+                <ul className="list-disc pl-5 mt-2 text-sm text-gray-800">
+                  <li>Built an automated NMR pipeline integrating ESMFold, BOLTZ-1, CHAI-1, and peak matching on the Poky platform.</li>
+                  <li>Implemented CSPred/SHIFTX2 server integration with caching to reuse existing shift predictions.</li>
+                  <li>Developed a scoring system to rank predicted structures by similarity to BMRB chemical shifts.</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+
           {/* Gallery Soma Project */}
           <a href = "https://github.com/EuljeHoon/gallerysoma-frontend" target = "_blank" rel = "noopener noreferrer">
             <div className="relative bg-white p-6 rounded-2xl shadow transition duration-300 hover:bg-[#FFCC33] hover:shadow-lg">
@@ -26,36 +81,9 @@ export default function Projects() {
                   Create a website to promote your gallery and sell your art online
                 </p>
                 <ul className="list-disc pl-5 mt-2 text-sm text-gray-800">
-                  <li>Built the frontend of an e-commerce platform for artwork sales and virtual exhibitions</li>
-                  <li>Implemented the payment page to support secure online transactions</li>
-                  <li>Worked closely with the backend team to ensure seamless integration across the stack</li>
-                </ul>
-              </div>
-            </div>
-          </a>
-
-          {/* Poky Project */}
-          <a href = "https://sites.google.com/view/wlee-group/people?authuser=0#h.dolxuabfkzks" target = "_blank" rel = "noopener noreferrer">
-            <div className="relative bg-white p-6 rounded-2xl shadow transition duration-300 hover:bg-[#FFCC33] hover:shadow-lg">
-
-              {/*background blur image*/}
-              <img
-                src="/logo/cuDenver.png"
-                alt="CU Denver Logo"
-                className="absolute top-1/2 left-1/2 w-70 h-40 -translate-x-1/2 -translate-y-1/2 opacity-15 blur-[1px] pointer-events-none"
-              />
-
-              {/*main content*/}
-              <div className = "relative z-10">
-                <h3 className="text-xl font-bold mb-2">Lee's group (CU Denver research intern)</h3>
-                <p className="mb-2 text-sm text-gray-700">Plug-in Developer</p>
-                <p>
-                  Contributing to OneShotNMR for NMR analysis and GUI development.
-                </p>
-                <ul className="list-disc pl-5 mt-2 text-sm text-gray-800">
-                  <li>Develop modules to automate chemical shift and structure prediction for N-HSQC spectra</li>
-                  <li>Contribute to experimental vs. simulated peak comparison algorithm for accurate NMR assignment</li>
-                  <li>Build GUI components to improve user interaction and streamline analysis workflow</li>
+                  <li>Developed the front-end of an e-commerce platform for selling artworks and hosting online exhibitions.</li>
+                  <li>Built cart functionality using Redux to manage art item pricing and connected it to the payment checkout interface.</li>
+                  <li>Built artist and gallery introduction pages with clean UI and responsive layout for enhanced user experience.</li>
                 </ul>
               </div>
             </div>
