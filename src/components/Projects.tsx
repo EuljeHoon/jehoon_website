@@ -6,7 +6,7 @@ export default function Projects() {
             id: 1,
             title: "dotori",
             role: "Software Engineer",
-            startDate: "2024-04-01",
+            startDate: "2025-04-01",
             endDate: "Present",
             description: "An AI-powered platform for essay feedback and personalized school recommendations for study abroad applicants.",
             achievements: [
@@ -21,8 +21,8 @@ export default function Projects() {
             id: 2,
             title: "Poky Lab",
             role: "Plug-in Developer",
-            startDate: "2024-06-01",
-            endDate: "2024-07-31",
+            startDate: "2025-06-01",
+            endDate: "2025-07-31",
             description: "Contributing to OneShotNMR for NMR analysis and GUI development.",
             achievements: [
                 "Built an automated NMR pipeline integrating ESMFold, BOLTZ-1, CHAI-1, and peak matching on the Poky platform.",
