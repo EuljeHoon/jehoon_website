@@ -3,16 +3,13 @@ import ContactForm from "@/components/ContactForm";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Projects from "@/components/Projects";
+import Experience from "@/components/experience/Experience";
+import Projects from "@/components/projects/Projects";
 import Skills from "@/components/Skills";
 
 export default function Portfolio() {
   return (
-    <main className="pt-24 min-h-screen bg-cover bg-center bg-repeat text-[#1B1F3B] p-8"
-    style={{
-      backgroundImage: "url('/umn_background_light.png')"
-      }}
-    >
+    <main className="pt-24 min-h-screen bg-white text-[#1B1F3B] p-8">
       {/* header */}
       <Header/>
 
@@ -21,6 +18,9 @@ export default function Portfolio() {
 
       {/* About Section */}
       <About/>
+
+      {/* Experience Section */}
+      <Experience/>
 
       {/* Projects Section */}
       <Projects/>

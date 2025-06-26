@@ -27,46 +27,49 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="scroll-mt-12 max-w-5xl mx-auto py-12">
-      <form
-      ref={form}
-      onSubmit={sendEmail}
-      className="max-w-xl mx-auto p-6 bg-white shadow-xl rounded-2xl space-y-4 mt-16"
-      >
-        <h2 className="text-2xl font-bold text-[#7A0019]">📮 Contact Jehoon</h2>
-        <p className="text-[#7A0019] text-black">I'm always open to have conversations. DO NOT hesitate to contact me!</p>
-        
-        <input
-          type="text"
-          name="user_name"
-          placeholder="Your Name"
-          className="w-full border p-2 rounded"
-          required
+    <section id="contact" className="scroll-mt-12 max-w-5xl mx-auto py-50 px-4">
+      <div className="flex flex-col md:flex-row items-center gap-2 md:gap-8">
+        <img
+          src="/Jehoon_suite image.png"
+          alt="Jehoon Suite"
+          className="w-80 h-80 object-contain"
+          style={{ minWidth: 180 }}
         />
-
-        <input
-          type="email"
-          name="user_email"
-          placeholder="Your Email"
-          className="w-full border p-2 rounded"
-          required
-        />
-
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          className="w-full border p-2 rounded h-32"
-          required
-        />
-
-        <button
-          type="submit"
-          className="bg-[#7A0019] text-white px-4 py-2 rounded hover:bg-[#FFCC33] hover:text-black transition"
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="flex-1 w-full p-6 bg-gray-50 shadow-xl rounded-2xl space-y-4 mt-0"
         >
-          Send Message
-        </button>
-      </form>
+          <h2 className="text-2xl font-bold text-black">📨 Contact Jehoon</h2>
+          <p className="text-black">I'm always open to have conversations. DO NOT hesitate to contact me!</p>
+          <input
+            type="text"
+            name="user_name"
+            placeholder="Your Name"
+            className="w-full border p-2 rounded"
+            required
+          />
+          <input
+            type="email"
+            name="user_email"
+            placeholder="Your Email"
+            className="w-full border p-2 rounded"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            className="w-full border p-2 rounded h-32"
+            required
+          />
+          <button
+            type="submit"
+            className="bg-black text-white px-4 py-2 rounded hover:bg-[#FFCC33] hover:text-black transition"
+          >
+            Send Email
+          </button>
+        </form>
+      </div>
     </section>
-
   );
 }

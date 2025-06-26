@@ -2,14 +2,10 @@ import React from "react";
 
 export default function About() {
     return(
-      <section id = "about" className="scroll-mt-15 max-w-5xl mx-auto py-12 grid md:grid-cols-2 gap-5 items-center">
+      <section id = "about" className="scroll-mt-10 max-w-6xl mx-auto py-20 px-4 grid md:grid-cols-2 gap-5 items-center">
         {/* Left: Picture */}
         <div className="flex justify-center">
-          <div className = "overflow-hidden shadow-md rounded-xl"
-          style={{
-            boxShadow: "0 8px 60px rgba(122, 0, 25, 0.3)"
-          }}
-          >
+          <div className = "overflow-hidden shadow-md rounded-xl">
             <img
               src="/jehoon_image.png"
               alt="Jehoon Park"
@@ -20,8 +16,8 @@ export default function About() {
 
         {/* Right: Introduction Text */}
         <div>
-          <div className="text-[#7A0019]">
-            <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+          <div className="text-black">
+            <h2 className="text-2xl font-semibold mb-6 text-left">About Me</h2>
           </div>
           <p className="mb-4">
             Hello, my name is Jehoon Park — a Computer Science student at the University of Minnesota Twin Cities.

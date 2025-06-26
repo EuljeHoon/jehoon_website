@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 w-full bg-[#7A0019] shadow-md z-50">
+    <header className="fixed top-0 left-0 w-full bg-black shadow-md z-50">
       <div className="px-4 sm:px-8 py-3 flex justify-between items-center">
         {/* logo and name */}
         <div className="flex items-center gap-2">
@@ -21,8 +21,8 @@ export default function Header() {
           <a href="#top" className="hover:text-white transition">
             Top
           </a>
-          <a href="#about" className="hover:text-white transition">
-            About
+          <a href="#experiences" className="hover:text-white transition">
+            Experience
           </a>
           <a href="#projects" className="hover:text-white transition">
             Projects
