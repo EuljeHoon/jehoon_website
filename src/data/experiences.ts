@@ -48,7 +48,7 @@ export const experiences: Experience[] = [
     },
     {
         id: 3,
-        title: "Gallery Soma (Next.js)",
+        title: "Gallery Soma",
         role: "Software Engineer Intern",
         startDate: "2022-05-31",
         endDate: "2022-07-31",

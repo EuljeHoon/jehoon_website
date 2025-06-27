@@ -19,14 +19,11 @@ export default function About() {
           <div className="text-black">
             <h2 className="text-2xl font-semibold mb-6 text-left">About Me</h2>
           </div>
-          <p className="mb-4">
-            Hello, my name is Jehoon Park — a Computer Science student at the University of Minnesota Twin Cities.
-          </p>
-          <p className="mb-4">
-            I'm passionate about software engineering. Not just building beautiful user interfaces, but also understanding backend systems, software architecture, and overall product design.
+          <p className="mb-2">
+            I'm a Computer Science major at the University of Minnesota – Twin Cities (UMN), dedicated to building meaningful software that improves lives.
           </p>
           <p>
-            Whether it's designing responsive UIs with React or implementing logic-heavy algorithms in Java, I enjoy solving problems and learning across the full spectrum of development.
+            My focus lies in integrating ML/AI into software to maximize productivity and convenience.
           </p>
         </div>
       </section>
