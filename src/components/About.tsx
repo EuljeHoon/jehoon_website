@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
     return(
-      <section id = "about" className="scroll-mt-10 max-w-6xl mx-auto py-20 px-4 grid md:grid-cols-2 gap-5 items-center">
+      <section id = "about" className="scroll-mt-10 max-w-6xl mx-auto py-20 px-4 grid md:grid-cols-2 gap-3 items-center">
         {/* Left: Picture */}
         <div className="flex justify-center">
           <div className = "overflow-hidden shadow-md rounded-xl">
