@@ -1,40 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jehoon Park Portfolio
 
-## Getting Started
+Personal portfolio website built with Next.js 15 and TypeScript, deployed on Vercel.
 
-First, run the development server:
+## Deployment Information
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Deployment Platform**: Vercel
+- **Live URL**: https://jehoon-website.vercel.app/
+- **Deployment Method**: Automatic deployment via GitHub repository integration with Vercel
+
+## 📁 Project Structure
+
+### Core Files
+
+```
+jehoon-portfolio/
+├── src/
+│   ├── app/
+│   │   ├── page.tsx          # Main page (combines all sections)
+│   │   ├── layout.tsx        # Global layout configuration
+│   │   └── globals.css       # Global styles
+│   ├── components/           # React components
+│   │   ├── Header.tsx        # Navigation header
+│   │   ├── Hero.tsx          # Main introduction section
+│   │   ├── About.tsx         # About me section
+│   │   ├── Skills.tsx        # Skills section
+│   │   ├── ContactForm.tsx   # Contact form
+│   │   ├── projects/         # Project-related components
+│   │   ├── experience/       # Experience-related components
+│   │   ├── common/           # Common components (modals, etc.)
+│   │   └── ui/               # Base UI components
+│   └── data/                 # Data files
+│       ├── projects.ts       # Project information
+│       └── experiences.ts    # Experience information
+└── public/                   # Static files
+    ├── projects/             # Project images
+    ├── logo/                 # Company/institution logos
+    └── *.png                 # Personal images
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Data Management
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Project Information (`src/data/projects.ts`)
+- Project titles, roles, descriptions
+- Technology stacks and achievements
+- GitHub links and project image paths
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Experience Information (`src/data/experiences.ts`)
+- Company names, positions, durations
+- Technology stacks and key achievements
+- Company logo paths
 
+## Image and Static File Management
 
+### Image Storage Locations
+- **Personal Images**: `public/` (jehoon_image.png, Jehoon_suite image.png)
+- **Project Images**: `public/projects/` (Block.png, Chess.png, Assembly.png)
+- **Logo Images**: `public/logo/` (various company/institution logos)
 
-or CLICK (https://jehoon-website.vercel.app/) directly if you just want to see my Website!
+### Image Usage Method
+- Referenced in components as `/projects/filename.png`
+- Utilizes Next.js static file serving functionality
 
-## Learn More
+## Technology Stack
 
-To learn more about Next.js, take a look at the following resources:
+### Frontend
+- **Next.js 15**: React framework
+- **TypeScript**: Type safety
+- **Tailwind CSS**: Styling
+- **React 19**: Latest React version
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Deployment and Tools
+- **Vercel**: Hosting and deployment
+- **GitHub**: Version control
+- **EmailJS**: Contact form functionality
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Development and Deployment Process
 
-## Deploy on Vercel
+### Local Development
+```bash
+npm install
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Deployment Process
+1. Push code to GitHub repository
+2. Vercel automatically detects changes
+3. Build and deployment runs automatically
+4. Available at https://jehoon-website.vercel.app/
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Responsive Design
+
+- Mobile, tablet, and desktop support
+- Utilizes Tailwind CSS responsive classes
+- Mobile-optimized header navigation
+
+## Key Features
+
+- **Section-based Layout**: Hero, About, Experience, Projects, Skills, Contact
+- **Modal Functionality**: Detailed experience information display
+- **Contact Form**: Email sending via EmailJS
+- **Responsive Layout**: Support for all devices
+- **Sliding Animations**: CSS animations with Intersection Observer for Experience timeline
+
+### Experience Section Animations
+- **Intersection Observer**: Detects when timeline items enter viewport
+- **Alternating Slide Directions**: Left-to-right for even items, right-to-left for odd items
+- **Staggered Animation Delays**: Each item animates with 0.2s delay between items
+- **Smooth Transitions**: 1-second ease-out animations with opacity and transform effects
+- **Performance Optimized**: Animations only trigger when elements become visible
+
+#### How It Works
+
+**Intersection Observer**: Monitors when timeline items enter the viewport and triggers animations only when elements become visible, improving performance.
+
+**Alternating Animation Pattern**: Even-numbered items slide in from the left, odd-numbered items slide in from the right, creating a visually appealing zigzag effect.
+
+**Staggered Timing**: Each item animates with a 0.2-second delay after the previous one, creating a smooth sequential reveal effect.
+
+**CSS Transforms**: Uses translateX and opacity transitions for smooth, hardware-accelerated animations that perform well on all devices.
+
+## Performance Optimization
+
+- Next.js automatic code splitting
+- Image optimization (Next.js Image component)
+- Static file caching
+- Vercel CDN utilization
