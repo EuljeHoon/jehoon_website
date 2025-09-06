@@ -7,7 +7,7 @@ export default function About() {
         <div className="flex justify-center">
           <div className = "overflow-hidden shadow-md rounded-xl">
             <img
-              src="/jehoon_image.png"
+              src="/jehoon_image.jpeg"
               alt="Jehoon Park"
               className="w-80 h-100 object-cover shadow-lg"
             />

@@ -26,7 +26,7 @@ export const experiences: Experience[] = [
             "Led a 4-person Agile team in the full-stack development of an AI-powered college admissions assistant.",
             "Developed Spring Boot RESTful API to handle users requests and data exchange between client and server.",
             "Engineered a GitHub Actions CI/CD pipeline to automate the build, test, and deployment processes.",
-            "Implemented Milvus vector database for Llama 3.0 to power personalized school recommendations."
+            "Implemented Milvus vector database for Gemini 2.5 flash lite to power personalized school essay advice."
         ]
     },
     {

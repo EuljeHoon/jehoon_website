@@ -41,7 +41,7 @@ export default function ContactForm() {
           className="flex-1 w-full p-6 bg-gray-50 shadow-xl rounded-2xl space-y-4 mt-0"
         >
           <h2 className="text-2xl font-bold text-black">📨 Contact Jehoon</h2>
-          <p className="text-black">I'm always open to have conversations. DO NOT hesitate to contact me!</p>
+          <p className="text-black">I'm always open for new opportunities. DO NOT hesitate to contact me!</p>
           <input
             type="text"
             name="user_name"
