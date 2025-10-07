@@ -18,7 +18,7 @@ export default function Hero() {
           <a href = "https://github.com/EuljeHoon" download target = "_blank" rel = "noopener noreferrer">
             <Button className="bg-black hover:bg-[#FFCC33] text-white">GitHub</Button>
           </a>
-          <a href = "https://drive.google.com/file/d/1e8rrkNu-pKDQDDcwr9QLvKGzzNdr9-W5/view?usp=sharing" download target = "_blank" rel = "noopener noreferrer">
+          <a href = "https://drive.google.com/file/d/1GUa38688O0EJ1TWVEdUyUHhIRipSIJmI/view?usp=sharing" download target = "_blank" rel = "noopener noreferrer">
             <Button className="bg-black hover:bg-[#FFCC33] text-white">View Resume</Button>
           </a>
           <a href = "https://www.linkedin.com/in/jehoon0213/" download target = "_blank" rel = "noopener noreferrer">

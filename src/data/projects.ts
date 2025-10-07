@@ -11,6 +11,20 @@ export interface Project {
 export const projects: Project[] = [
    {
     id: 1,
+    title: "GPU Image Editor",
+    role: "AImage Editor project",
+    description: "C++, GLSL, Object-oriented Programming",
+    achievements: [
+        "Developed a GPU-accelerated image editor that allows draw and erase on images with customizable RGB colors.",
+        "Implemented the copy constructor, assignment operator, and destructor for 7+ classes for memory management.",
+        "Developed an OpenGL-based graphics application leveraging GPU acceleration, implementing custom shaders and optimized texture handling for real-time rendering.",
+        "Used OpenGL VAO, VBO, and EBO buffers to optimize GPU rendering speed by 90%."
+    ],
+    link: "https://github.com/EuljeHoon/GPU_Image_Editor.git",
+    projectImage: "/projects/GPUImage.png"
+   },
+   {
+    id: 2,
     title: "Assembly-Level Bit Manipulation",
     role: "Assembly-Level Bit Manipulation project",
     description: "Assembly, C, MakeFile",
@@ -24,7 +38,7 @@ export const projects: Project[] = [
     projectImage: "/projects/Assembly.png"
   },
   {
-    id: 2,
+    id: 3,
     title: "Chess Game",
     role: "Terminal-based Java Project",
     description: "Java",
@@ -38,7 +52,7 @@ export const projects: Project[] = [
     projectImage: "/projects/Chess.png"
   },
   {
-    id: 3,
+    id: 4,
     title: "Block Maze Game",
     role: "Java-swing based Project",
     description: "Java, Swing, OOP",

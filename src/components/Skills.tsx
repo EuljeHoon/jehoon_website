@@ -11,7 +11,7 @@ export default function About() {
           <div className="bg-gray-50 p-6 rounded-2xl shadow-md">
             <h3 className="font-bold text-[#1B1F3B] mb-2">Programming Languages</h3>
             <p className="text-sm text-gray-800">
-              Python, Java, C, JavaScript, TypeScript, SQL, Ocaml, HTML, CSS
+              Python, Java, C, C++, JavaScript, TypeScript, SQL, Ocaml, HTML, CSS
             </p>
           </div>
 
@@ -27,7 +27,7 @@ export default function About() {
           <div className="bg-gray-50 p-6 rounded-2xl shadow-md">
             <h3 className="font-bold text-[#1B1F3B] mb-2">Databases, Cloud & DevOps</h3>
             <p className="text-sm text-gray-800">
-              MySQL, MongoDB, GCP, AWS, Github Actions, Vercel, Cloudflare
+              PostgreSQL, MySQL, MongoDB, GCP, AWS, Github Actions, Vercel, Cloudflare
             </p>
           </div>
 
