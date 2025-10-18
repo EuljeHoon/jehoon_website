@@ -23,7 +23,7 @@ export default function About() {
             I'm a Computer Science major at the University of Minnesota – Twin Cities (UMN), dedicated to building meaningful software that improves lives.
           </p>
           <p>
-            My focus lies in integrating ML/AI into software to maximize productivity and convenience.
+            This is my personal portfolio website to showcase my projects and experiences.
           </p>
         </div>
       </section>

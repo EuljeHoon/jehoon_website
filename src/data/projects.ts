@@ -4,27 +4,58 @@ export interface Project {
   role: string;
   description: string;
   achievements: string[];
-  link: string;
+  link?: string;
+  backendLink?: string;
+  frontendLink?: string;
   projectImage: string;
 }
 
 export const projects: Project[] = [
-   {
+  {
     id: 1,
+    title: "Dotori College Essay Assistant (In Progress)",
+    role: "As a Founder & Software Engineer, leaded motivated group of 4 people to innovate education.",
+    description: "Next.js, Spring Boot, PostgreSQL",
+    achievements: [
+        "Developed a full-stack AI-powered college admissions assistant using Next.js frontend and Spring Boot backend with PostgreSQL database.",
+        "Implemented JWT authentication system with access/refresh tokens, Google OAuth integration, and secure file upload to Google Cloud Storage.",
+        "Built AI-powered college recommendation system with personalized matching scores and resume-driven essay prompts using Redux state management.",
+        "Created comprehensive application flow management with step-based navigation, shopping cart system, and dashboard progress tracking."
+    ],
+    backendLink: "https://github.com/EuljeHoon/dotori-backend.git",
+    frontendLink: "https://github.com/EuljeHoon/dotori-web.git",
+    projectImage: "/projects/dotori.png"
+   },
+   {
+    id: 2,
     title: "GPU Image Editor",
-    role: "AImage Editor project",
+    role: "Image Editor project using OpenGL(GPU Acceleration)",
     description: "C++, GLSL, Object-oriented Programming",
     achievements: [
         "Developed a GPU-accelerated image editor that allows draw and erase on images with customizable RGB colors.",
         "Implemented the copy constructor, assignment operator, and destructor for 7+ classes for memory management.",
-        "Developed an OpenGL-based graphics application leveraging GPU acceleration, implementing custom shaders and optimized texture handling for real-time rendering.",
+        "Developed an OpenGL-based graphics application leveraging GPU s, implementing custom shaders and optimized texture handling for real-time rendering.",
         "Used OpenGL VAO, VBO, and EBO buffers to optimize GPU rendering speed by 90%."
     ],
     link: "https://github.com/EuljeHoon/GPU_Image_Editor.git",
     projectImage: "/projects/GPUImage.png"
    },
    {
-    id: 2,
+    id: 3,
+    title: "Jehoon Portfolio",
+    role: "Jehoon's Portfolio webste by Next.js and Tailwind CSS",
+    description: "Next.js, Tailwind CSS",
+    achievements: [
+        "Developed a portfolio website using Next.js and Tailwind CSS with modern UI/UX design principles.",
+        "Implemented dynamic sliding animations for the Experience section using Intersection Observer API and CSS keyframes.",
+        "Created modular component architecture with TypeScript interfaces for maintainable and scalable code structure.",
+        "Integrated EmailJS for contact form functionality and deployed the website on Vercel with automatic GitHub integration."
+    ],
+    link: "https://github.com/EuljeHoon/jehoon_website.git",
+    projectImage: "/projects/jehoon_website.png"
+   },
+   {
+    id: 4,
     title: "Assembly-Level Bit Manipulation",
     role: "Assembly-Level Bit Manipulation project",
     description: "Assembly, C, MakeFile",
@@ -38,7 +69,7 @@ export const projects: Project[] = [
     projectImage: "/projects/Assembly.png"
   },
   {
-    id: 3,
+    id: 5,
     title: "Chess Game",
     role: "Terminal-based Java Project",
     description: "Java",
@@ -52,7 +83,7 @@ export const projects: Project[] = [
     projectImage: "/projects/Chess.png"
   },
   {
-    id: 4,
+    id: 6,
     title: "Block Maze Game",
     role: "Java-swing based Project",
     description: "Java, Swing, OOP",
