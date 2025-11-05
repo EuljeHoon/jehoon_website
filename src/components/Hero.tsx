@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { Github, Linkedin, FileText } from "lucide-react";
 
 export default function Hero() {
     return(
@@ -15,14 +16,29 @@ export default function Hero() {
         A Computer Science student with broad interests across the stack — from frontend design to backend logic and everything in between.
         </p>
         <div className="mt-6 flex justify-center gap-4">
-          <a href = "https://github.com/EuljeHoon" download target = "_blank" rel = "noopener noreferrer">
-            <Button className="bg-black hover:bg-[#FFCC33] text-white">GitHub</Button>
+          <a href = "https://github.com/EuljeHoon" target = "_blank" rel = "noopener noreferrer" className="group relative">
+            <Button className="bg-black hover:bg-[#FFCC33] text-white p-3 rounded-full">
+              <Github className="w-5 h-5" />
+            </Button>
+            <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">
+              GitHub
+            </span>
           </a>
-          <a href = "https://drive.google.com/file/d/1GUa38688O0EJ1TWVEdUyUHhIRipSIJmI/view?usp=sharing" download target = "_blank" rel = "noopener noreferrer">
-            <Button className="bg-black hover:bg-[#FFCC33] text-white">View Resume</Button>
+          <a href = "https://drive.google.com/file/d/1EQpkSyyx5nYxhC1oYNdxi0vb2sav0a5T/view?usp=sharing" download target = "_blank" rel = "noopener noreferrer" className="group relative">
+            <Button className="bg-black hover:bg-[#FFCC33] text-white p-3 rounded-full">
+              <FileText className="w-5 h-5" />
+            </Button>
+            <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">
+              Jehoon's Resume
+            </span>
           </a>
-          <a href = "https://www.linkedin.com/in/jehoon0213/" download target = "_blank" rel = "noopener noreferrer">
-            <Button className="bg-black hover:bg-[#FFCC33] text-white">LinkedIn</Button>
+          <a href = "https://www.linkedin.com/in/jehoon0213/" target = "_blank" rel = "noopener noreferrer" className="group relative">
+            <Button className="bg-black hover:bg-[#FFCC33] text-white p-3 rounded-full">
+              <Linkedin className="w-5 h-5" />
+            </Button>
+            <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">
+              LinkedIn
+            </span>
           </a>
         </div>
       </section>
