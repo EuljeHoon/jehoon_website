@@ -17,7 +17,7 @@ export const experiences: Experience[] = [
         title: "dotori",
         role: "Software Engineer",
         startDate: "2025-04-01",
-        endDate: "Present",
+        endDate: "2025-12-31",
         description: "Making AI-powered college admissions assistant",
         link: "https://dotori-intro-website.vercel.app/",
         logo: "/logo/Main_logo_invisible _back.png",
