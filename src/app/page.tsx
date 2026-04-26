@@ -6,6 +6,7 @@ import About from "@/components/About";
 import Experience from "@/components/experience/Experience";
 import Projects from "@/components/projects/Projects";
 import Skills from "@/components/Skills";
+import AiChat from "@/components/AiChat";
 
 export default function Portfolio() {
   return (
@@ -15,6 +16,9 @@ export default function Portfolio() {
 
       {/* Hero Section */}
       <Hero/>
+
+      {/* AiChat Section */}
+      <AiChat/>
 
       {/* About Section */}
       <About/>

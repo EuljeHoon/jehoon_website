@@ -13,6 +13,18 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
+    title: "University Course Scheduling",
+    role: "Contributor",
+    description: "Python, Google Colab",
+    achievements: [
+        "Built a course scheduling system that generates all feasible schedules under given constraints.",
+        "Modeled the problem as a Constraint Satisfaction Problem (CSP) and applied efficient search techniques.",
+        "Applied constraint propagation using MAC (Maintaining Arc Consistency) based on AC-3 to prune impractical branches and reduce search complexity by 40%."
+    ],
+    projectImage: "/logo/umn_logo.png"
+    },
+    {
+    id: 2,
     title: "Dotori College Essay Assistant (In Progress)",
     role: "As a Founder & Software Engineer, leaded motivated group of 4 people to innovate education.",
     description: "Next.js, Spring Boot, PostgreSQL",
@@ -27,7 +39,7 @@ export const projects: Project[] = [
     projectImage: "/projects/dotori.png"
    },
    {
-    id: 2,
+    id: 3,
     title: "GPU Image Editor",
     role: "Image Editor project using OpenGL(GPU Acceleration)",
     description: "C++, GLSL, Object-oriented Programming",
@@ -41,7 +53,7 @@ export const projects: Project[] = [
     projectImage: "/projects/GPUImage.png"
    },
    {
-    id: 3,
+    id: 4,
     title: "Jehoon Portfolio",
     role: "Jehoon's Portfolio webste by Next.js and Tailwind CSS",
     description: "Next.js, Tailwind CSS",
@@ -55,7 +67,7 @@ export const projects: Project[] = [
     projectImage: "/projects/jehoon_website.png"
    },
    {
-    id: 4,
+    id: 5,
     title: "Assembly-Level Bit Manipulation",
     role: "Assembly-Level Bit Manipulation project",
     description: "Assembly, C, MakeFile",
@@ -69,7 +81,7 @@ export const projects: Project[] = [
     projectImage: "/projects/Assembly.png"
   },
   {
-    id: 5,
+    id: 6,
     title: "Chess Game",
     role: "Terminal-based Java Project",
     description: "Java",
@@ -83,7 +95,7 @@ export const projects: Project[] = [
     projectImage: "/projects/Chess.png"
   },
   {
-    id: 6,
+    id: 7,
     title: "Block Maze Game",
     role: "Java-swing based Project",
     description: "Java, Swing, OOP",

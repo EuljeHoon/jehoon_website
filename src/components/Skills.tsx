@@ -11,7 +11,7 @@ export default function About() {
           <div className="bg-gray-50 p-6 rounded-2xl shadow-md">
             <h3 className="font-bold text-[#1B1F3B] mb-2">Programming Languages</h3>
             <p className="text-sm text-gray-800">
-              Python, Java, C, C++, JavaScript, TypeScript, SQL, Ocaml, HTML, CSS
+              Python, Java, JavaScript, TypeScript, C, C++, SQL, OCaml, HTML, CSS
             </p>
           </div>
 
@@ -19,7 +19,7 @@ export default function About() {
           <div className="bg-gray-50 p-6 rounded-2xl shadow-md">
             <h3 className="font-bold text-[#1B1F3B] mb-2">Frameworks & Libraries</h3>
             <p className="text-sm text-gray-800">
-              FastAPI, PyTorch, Spring Boot, React, Next.js(SSR), Express.js
+              Fast MCP, Django, PyTorch, FastAPI, React, Spring Boot, Next.js(SSR), Express.js
             </p>
           </div>
 
@@ -27,15 +27,7 @@ export default function About() {
           <div className="bg-gray-50 p-6 rounded-2xl shadow-md">
             <h3 className="font-bold text-[#1B1F3B] mb-2">Databases, Cloud & DevOps</h3>
             <p className="text-sm text-gray-800">
-              PostgreSQL, MySQL, MongoDB, GCP, AWS, Github Actions, Vercel, Cloudflare
-            </p>
-          </div>
-
-          {/* 4 */}
-          <div className="bg-gray-50 p-6 rounded-2xl shadow-md">
-            <h3 className="font-bold text-[#1B1F3B] mb-2">Developer Tools</h3>
-            <p className="text-sm text-gray-800">
-              VS Code, IntelliJ, GDB, Git, Linux
+              Pinecone, Databricks, PostgreSQL, MySQL, MongoDB, GCP, AWS, Github Actions
             </p>
           </div>
         </div>

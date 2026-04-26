@@ -23,10 +23,10 @@ export const experiences: Experience[] = [
         logo: "/logo/Main_logo_invisible _back.png",
         techStack: ["Java", "Spring Boot", "React", "RESTful API", "JWT", "PostgreSQL"],
         achievements: [
-            "Led a 4-person Agile team to build an AI-powered college admissions consulting platform that provides personalized essay feedback for students across 2 countries.",
-            "Developed Spring Boot RESTful API with JWT authentication and PostgreSQL.",
-            "Engineered a GitHub Actions CI/CD pipeline to automate the build, test, and deployment processes.",
-            "Integrated Gemini 2.5 with Milvus vector database to reference sample essays, enabling personalized consulting."
+            "Led a 4-person Agile team to build an AI-powered platform that delivers personalized college essay feedback.",
+            "Implemented a RAG pipeline that embeds user essays and retrieves similar admitted essays from Pinecone.",
+            "Reduced token overhead by 35% by implementing JIT fetching via MCP, bypassing context limits for large-scale Databricks datasets.",
+            "Designed a multi-agent pipeline separating similarity search, essay analysis, and feedback generation, reducing LLM’s context size by up to 50% and improving feedback relevance."
         ]
     },
     {
@@ -40,10 +40,10 @@ export const experiences: Experience[] = [
         logo: "/logo/cuDenver.png",
         techStack: ["Python", "GUI", "Tkinter", "AI Models(ESMFold, BOLTZ, CHAI)"],
         achievements: [
-            "Developed POKY, an automated protein prediction software that provides faster insights for drug discovery, to streamline protein research workflows.",
-            "Implemented Python GUI using Tkinter library to make the software more user-friendly and accessible.",
-            "Accelerated protein signal analysis by 5 minutes to 2 minutes with a Python script that parallelized multiple analysis tools.",
-            "Integrated 3 AI models (ESMFold, BOLTZ, CHAI) into a unified backend API, maintaining prediction accuracy while significantly improving workflow efficiency."
+            "Developed POKY, an AI-driven platform for automated protein structure prediction and analysis.",
+            "Engineered an automated AI pipeline integrating multiple structure prediction models (ESMFold, Boltz-1, Chai-1) as modular tools, enabling seamless end-to-end processing of protein sequences.",
+            "Developed a Python-based scoring algorithm to match predicted spectra with BMRB data and rank optimal structures based on experimental reference data.",
+            "Reduced system latency by 60%(5m → 2m) by Python multiprocessing to parallelize high-compute analysis tools, improving throughput for large-scale data processing."
         ]
     },
     {
@@ -57,10 +57,10 @@ export const experiences: Experience[] = [
         logo: "roka.png",
         techStack: ["TICN", "VoIP", "Network Equipment"],
         achievements: [
-            "Served as a communications specialist responsible for communication and data networks across multiple military units.",
-            "Configured and linked Tactical Information and Communication Network (TICN) equipment to base stations, enabling stable voice, data, and video communication across field units.",
-            "Managed VoIP infrastructure to enable stable real-time voice communication between command and field units.",
-            "Troubleshooted network equipment, restoring communication via reboots, cable swaps, and frequency tuning."
+            "Operated tactical communication networks (TICN) across LAN/WAN supporting multiple military units.",
+            "Configured iptables firewall rules on a Linux server to restrict unauthorized access.",
+            "Configured IP addressing and subnet masks to support communication between networked systems within TICN.",
+            "Installed and maintained optical cable connections to support high-speed network communication."
         ]
     },
     {
@@ -74,10 +74,10 @@ export const experiences: Experience[] = [
         logo: "/logo/soma.png",
         techStack: ["React", "Redux", "Tailwind", "Figma", "RESTful API", "AWS"],
         achievements: [
-            "Standardized styles and color palette using Tailwind and Figma, enhancing design consistency.",
-            "Implemented global state management using Redux to reduce redundant logic by 30%.",
-            "Developed reusable components (Header, Footer, Cart Button) with prop-driven design, reused across 6+ pages to simplify maintenance and ensure UI consistency.",
-            "Loaded artwork images from AWS S3 using signed URLs, ensuring secure rendering."
+            "Managed global state using Redux to optimize data flow and reduce redundant logic by 30%.",
+            "Implemented RestAPI requests in JavaScript to fetch artworks, events, and artist data.",
+            "Implemented JWT authentication with HttpOnly cookies, mitigating XSS risks and improving session persistence.",
+            "Delivered images through AWS CloudFront CDN, improving load performance and reducing latency."
         ]
     }
 ]; 
