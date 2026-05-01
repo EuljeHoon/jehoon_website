@@ -14,6 +14,23 @@ export interface Experience {
 export const experiences: Experience[] = [
     {
         id: 1,
+        title: "University of Colorado Denver, Lee Group",
+        role: "Research Assistant Developer",
+        startDate: "2025-06-01",
+        endDate: "2026-03-16",
+        description: "Developed Poky plug-in application.",
+        link: "https://sites.google.com/view/pokynmr",
+        logo: "/logo/cuDenver.png",
+        techStack: ["Python", "GUI", "Tkinter", "AI Models(ESMFold, BOLTZ, CHAI)"],
+        achievements: [
+            "Developed POKY, an AI-driven platform for automated protein structure prediction and analysis.",
+            "Engineered an automated AI pipeline integrating multiple structure prediction models (ESMFold, Boltz-1, Chai-1) as modular tools, enabling seamless end-to-end processing of protein sequences.",
+            "Developed a Python-based scoring algorithm to match predicted spectra with BMRB data and rank optimal structures based on experimental reference data.",
+            "Reduced system latency by 60%(5m → 2m) by Python multiprocessing to parallelize high-compute analysis tools, improving throughput for large-scale data processing."
+        ]
+    },
+    {
+        id: 2,
         title: "dotori",
         role: "Software Engineer",
         startDate: "2025-04-01",
@@ -27,23 +44,6 @@ export const experiences: Experience[] = [
             "Implemented a RAG pipeline that embeds user essays and retrieves similar admitted essays from Pinecone.",
             "Reduced token overhead by 35% by implementing JIT fetching via MCP, bypassing context limits for large-scale Databricks datasets.",
             "Designed a multi-agent pipeline separating similarity search, essay analysis, and feedback generation, reducing LLM’s context size by up to 50% and improving feedback relevance."
-        ]
-    },
-    {
-        id: 2,
-        title: "University of Colorado Denver, Lee Group",
-        role: "Research Assistant Developer",
-        startDate: "2025-06-01",
-        endDate: "2025-07-31",
-        description: "Developed Poky plug-in application.",
-        link: "https://sites.google.com/view/pokynmr",
-        logo: "/logo/cuDenver.png",
-        techStack: ["Python", "GUI", "Tkinter", "AI Models(ESMFold, BOLTZ, CHAI)"],
-        achievements: [
-            "Developed POKY, an AI-driven platform for automated protein structure prediction and analysis.",
-            "Engineered an automated AI pipeline integrating multiple structure prediction models (ESMFold, Boltz-1, Chai-1) as modular tools, enabling seamless end-to-end processing of protein sequences.",
-            "Developed a Python-based scoring algorithm to match predicted spectra with BMRB data and rank optimal structures based on experimental reference data.",
-            "Reduced system latency by 60%(5m → 2m) by Python multiprocessing to parallelize high-compute analysis tools, improving throughput for large-scale data processing."
         ]
     },
     {

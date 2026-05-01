@@ -1,12 +1,39 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
 export default function AiChat() {
+  const headingText = "Ask Gemini about Jehoon's background!";
   const [message, setMessage] = useState("");
   const [answer, setAnswer] = useState("");
   const [loading, setLoading] = useState(false);
+  const [typedHeading, setTypedHeading] = useState("");
+
+  useEffect(() => {
+    let index = 0;
+    let timeoutId: ReturnType<typeof setTimeout>;
+
+    const type = () => {
+      index += 1;
+      setTypedHeading(headingText.slice(0, index));
+
+      if (index >= headingText.length) {
+        timeoutId = setTimeout(() => {
+          index = 0;
+          setTypedHeading("");
+          type();
+        }, 5000);
+        return;
+      }
+
+      timeoutId = setTimeout(type, 45);
+    };
+
+    timeoutId = setTimeout(type, 45);
+
+    return () => clearTimeout(timeoutId);
+  }, [headingText]);
 
   const sendMessage = async () => {
     const trimmed = message.trim();
@@ -38,7 +65,10 @@ export default function AiChat() {
           height={24}
           className="h-6 w-6"
         />
-        Ask Gemini about Jehoon&apos;s background
+        <span>
+          {typedHeading}
+          <span className="ml-0.5 inline-block animate-pulse text-gray-500">|</span>
+        </span>
       </h2>
 
       <div className="rounded-3xl border border-gray-200 bg-gray-50 px-3 py-2 shadow-inner">

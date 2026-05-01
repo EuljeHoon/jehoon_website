@@ -1,41 +1,36 @@
 'use client';
 
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react"; // 햄버거 아이콘, 닫기 아이콘
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-black shadow-md z-50">
-      <div className="px-4 sm:px-8 py-3 flex justify-between items-center">
-        {/* logo and name */}
-        <div className="flex items-center gap-2">
-          <img
-            src="/logo/umn_logo.png"
-            alt="UMN Logo"
-            className="h-6 sm:h-8 object-contain"
-          />
-          <span className="text-[#FFCC33] text-base sm:text-lg font-semibold tracking-tight font-[var(--font-poppins)]">
+    <header className="fixed top-0 left-0 z-50 w-full bg-white shadow-lg">
+      <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-4 py-3 sm:px-6">
+        {/* name */}
+        <div className="flex items-center">
+          <span className="bg-gradient-to-r from-[#111827] to-[#1B1F3B] bg-clip-text text-base font-bold tracking-wide text-transparent sm:text-xl font-[var(--font-sora)]">
             Jehoon Park
           </span>
         </div>
 
         {/* desktop nav */}
-        <nav className="hidden md:flex gap-4 sm:gap-6 text-xs sm:text-sm font-medium text-[#FFCC33]">
-          <a href="#top" className="hover:text-white transition">
+        <nav className="hidden gap-4 text-xs font-medium text-[#1B1F3B] md:flex sm:gap-6 sm:text-sm">
+          <a href="#top" className="transition-colors duration-200 hover:text-amber-500">
             Top
           </a>
-          <a href="#experiences" className="hover:text-white transition">
+          <a href="#experiences" className="transition-colors duration-200 hover:text-amber-500">
             Experience
           </a>
-          <a href="#projects" className="hover:text-white transition">
+          <a href="#projects" className="transition-colors duration-200 hover:text-amber-500">
             Projects
           </a>
-          <a href="#skills" className="hover:text-white transition">
+          <a href="#skills" className="transition-colors duration-200 hover:text-amber-500">
             Skills
           </a>
-          <a href="#contact" className="hover:text-white transition">
+          <a href="#contact" className="transition-colors duration-200 hover:text-amber-500">
             Contact
           </a>
         </nav>
@@ -43,7 +38,7 @@ export default function Header() {
         {/* hamburger button - only visible on mobile */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-[#FFCC33]"
+          className="text-[#1B1F3B] md:hidden"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -51,20 +46,20 @@ export default function Header() {
 
       {/* mobile nav */}
       {isOpen && (
-        <div className="md:hidden flex flex-col items-start px-6 pb-4 bg-black text-[#FFCC33] space-y-3">
-          <a href="#top" onClick={() => setIsOpen(false)} className="hover:text-white">
+        <div className="flex flex-col items-start space-y-3 bg-white px-6 pb-4 text-[#1B1F3B] md:hidden">
+          <a href="#top" onClick={() => setIsOpen(false)} className="transition-colors duration-200 hover:text-amber-500">
             Top
           </a>
-          <a href="#experiences" onClick={() => setIsOpen(false)} className="hover:text-white">
+          <a href="#experiences" onClick={() => setIsOpen(false)} className="transition-colors duration-200 hover:text-amber-500">
             Experience
           </a>
-          <a href="#projects" onClick={() => setIsOpen(false)} className="hover:text-white">
+          <a href="#projects" onClick={() => setIsOpen(false)} className="transition-colors duration-200 hover:text-amber-500">
             Projects
           </a>
-          <a href="#skills" onClick={() => setIsOpen(false)} className="hover:text-white">
+          <a href="#skills" onClick={() => setIsOpen(false)} className="transition-colors duration-200 hover:text-amber-500">
             Skills
           </a>
-          <a href="#contact" onClick={() => setIsOpen(false)} className="hover:text-white">
+          <a href="#contact" onClick={() => setIsOpen(false)} className="transition-colors duration-200 hover:text-amber-500">
             Contact
           </a>
         </div>

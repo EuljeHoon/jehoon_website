@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { Mail, MapPin } from "lucide-react";
 
 export default function ContactForm() {
   const form = useRef<HTMLFormElement>(null);
@@ -28,13 +29,26 @@ export default function ContactForm() {
 
   return (
     <section id="contact" className="scroll-mt-12 max-w-5xl mx-auto py-50 px-4">
-      <div className="flex flex-col md:flex-row items-center gap-2 md:gap-8">
-        <img
-          src="/Jehoon_suite image.png"
-          alt="Jehoon Suite"
-          className="w-80 h-80 object-contain"
-          style={{ minWidth: 180 }}
-        />
+      <div className="flex flex-col items-center gap-2 md:flex-row md:gap-4">
+        <div className="w-full max-w-md space-y-4">
+          <img
+            src="/Jehoon_suite image.png"
+            alt="Jehoon Suite"
+            className="h-80 w-80 object-contain"
+            style={{ minWidth: 180 }}
+          />
+
+          <div className="px-1 py-1 text-[#1B1F3B]">
+            <div className="mb-2 flex items-center gap-2 text-base font-medium">
+              <Mail className="h-5 w-5" />
+              <span>jehoon.park0@gmail.com</span>
+            </div>
+            <div className="flex items-center gap-2 text-base font-medium">
+              <MapPin className="h-5 w-5" />
+              <span>Minneapolis, MN</span>
+            </div>
+          </div>
+        </div>
         <form
           ref={form}
           onSubmit={sendEmail}

@@ -21,6 +21,7 @@ export const projects: Project[] = [
         "Modeled the problem as a Constraint Satisfaction Problem (CSP) and applied efficient search techniques.",
         "Applied constraint propagation using MAC (Maintaining Arc Consistency) based on AC-3 to prune impractical branches and reduce search complexity by 40%."
     ],
+    link: "https://github.com/EuljeHoon/course-scheduler-csp",
     projectImage: "/logo/umn_logo.png"
     },
     {

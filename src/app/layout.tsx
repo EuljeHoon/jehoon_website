@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import { Geist, Geist_Mono, Poppins, Sora } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -18,6 +18,12 @@ const poppins = Poppins({
   variable: '--font-poppins'
 })
 
+const sora = Sora({
+  subsets: ["latin"],
+  weight: ["500", "700"],
+  variable: "--font-sora",
+});
+
 export const metadata: Metadata = {
   title: "Jehoon Park - Portfolio",
   description: "Jehoon's personal portfolio showcasing projects and skills",
@@ -34,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${sora.variable} antialiased`}
       >
         {children}
       </body>
