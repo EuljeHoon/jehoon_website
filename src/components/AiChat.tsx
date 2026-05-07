@@ -109,6 +109,11 @@ export default function AiChat() {
           {answer}
         </div>
       )}
+
+      <p className="mt-3 text-xs text-gray-500">
+        [Notice]: First response may take a little longer because the backend server needs to wake up
+        (free tier).
+      </p>
     </div>
   );
 }
