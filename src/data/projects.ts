@@ -7,6 +7,7 @@ export interface Project {
   link?: string;
   backendLink?: string;
   frontendLink?: string;
+  articleLink?: string;
   projectImage: string;
 }
 
@@ -22,6 +23,7 @@ export const projects: Project[] = [
         "Applied constraint propagation using MAC (Maintaining Arc Consistency) based on AC-3 to prune impractical branches and reduce search complexity by 40%."
     ],
     link: "https://github.com/EuljeHoon/course-scheduler-csp",
+    articleLink: "https://drive.google.com/file/d/17ePx45tCTg0H-fiQfF81JtXiX-ZCzgmu/view?usp=sharing",
     projectImage: "/logo/umn_logo.png"
     },
     {

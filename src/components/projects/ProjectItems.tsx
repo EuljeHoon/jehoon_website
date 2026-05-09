@@ -10,6 +10,7 @@ interface ProjectItemProps {
     link?: string;
     backendLink?: string;
     frontendLink?: string;
+    articleLink?: string;
     projectImage: string;
   };
 }
@@ -44,7 +45,19 @@ const ProjectItems: React.FC<ProjectItemProps> = ({ project }) => {
               rel="noopener noreferrer"
               className="text-blue-600 hover:text-blue-800 underline hover:no-underline transition-colors duration-200 font-medium"
             >
-              Go to Github Repository
+              Github: Go to Repository
+            </a>
+          </div>
+        )}
+        {project.articleLink && (
+          <div>
+            <a 
+              href={project.articleLink} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 underline hover:no-underline transition-colors duration-200 font-medium"
+            >
+              Article: Go to Google Drive
             </a>
           </div>
         )}
