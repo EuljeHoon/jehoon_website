@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   title: "Jehoon Park - Portfolio",
   description: "Jehoon's personal portfolio showcasing projects and skills",
     icons: {
-    icon: "/favicon.ico",
+    icon: "/jehoon(H).ico",
   },
 };
 
