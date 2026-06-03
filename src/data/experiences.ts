@@ -14,6 +14,20 @@ export interface Experience {
 export const experiences: Experience[] = [
     {
         id: 1,
+        title: "Bobcat Company",
+        role: "AI Engineering Intern (Data Science)",
+        startDate: "2026-06-15",
+        endDate: "2026-08-28",
+        description: "Designing, developing, and deploying an AI-powered application",
+        link: "https://www.bobcat.com/na/en",
+        logo: "/logo/bobcat_logo.png",
+        techStack: ["AI", "MCP"],
+        achievements: [
+            "Selected for DS(AI/ML) intern at Bobcat Company."
+        ]
+    },
+    {
+        id: 2,
         title: "University of Colorado Denver, Lee Group",
         role: "Research Assistant Developer",
         startDate: "2025-06-01",
@@ -30,7 +44,7 @@ export const experiences: Experience[] = [
         ]
     },
     {
-        id: 2,
+        id: 3,
         title: "dotori",
         role: "Software Engineer",
         startDate: "2025-04-01",
@@ -47,7 +61,7 @@ export const experiences: Experience[] = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         title: "Republic of Korea Army",
         role: "Communication Specialist",
         startDate: "2023-06-20",
@@ -64,7 +78,7 @@ export const experiences: Experience[] = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         title: "Gallery Soma",
         role: "Software Engineer Intern",
         startDate: "2022-05-31",
