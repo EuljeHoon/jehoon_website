@@ -18,12 +18,13 @@ export const experiences: Experience[] = [
         role: "AI Engineering Intern (Data Science)",
         startDate: "2026-06-15",
         endDate: "2026-08-28",
-        description: "Designing, developing, and deploying an AI-powered application",
+        description: "Designing, developing, and deploying an AI service agent.",
         link: "https://www.bobcat.com/na/en",
         logo: "/logo/bobcat_logo.png",
-        techStack: ["AI", "MCP"],
+        techStack: ["AI", "RAG", "AWS"],
         achievements: [
-            "Selected for DS(AI/ML) intern at Bobcat Company."
+            "Contributed to the development of an AI agent that enables service technicians to quickly access equipment information and receive troubleshooting and repair guidance.",
+            "Developed a Taskfile-based automation workflow to validate AWS Bedrock Guardrails through LLM invocations, testing prompt-injection,  data-leakage, and information exposure scenarios before deployment."
         ]
     },
     {
