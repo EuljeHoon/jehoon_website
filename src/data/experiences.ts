@@ -15,7 +15,7 @@ export const experiences: Experience[] = [
     {
         id: 1,
         title: "Bobcat Company",
-        role: "AI Engineering Intern (Data Science)",
+        role: "AI Engineering Intern",
         startDate: "2026-06-15",
         endDate: "2026-08-28",
         description: "Designing, developing, and deploying an AI service agent.",
