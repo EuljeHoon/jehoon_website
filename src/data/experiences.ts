@@ -24,7 +24,7 @@ export const experiences: Experience[] = [
         techStack: ["AI", "RAG", "AWS"],
         achievements: [
             "Contributed to the development of an AI agent that enables service technicians to quickly access equipment information and receive troubleshooting and repair guidance.",
-            "Developed a Taskfile-based automation workflow to validate AWS Bedrock Guardrails through LLM invocations, testing prompt-injection,  data-leakage, and information exposure scenarios before deployment."
+            "Developed a Taskfile-based automation workflow to validate AWS Bedrock Guardrails through, testing prompt-injection,  data-leakage, and information exposure scenarios before deployment."
         ]
     },
     {
