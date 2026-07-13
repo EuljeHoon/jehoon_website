@@ -23,8 +23,10 @@ export const experiences: Experience[] = [
         logo: "/logo/bobcat_logo.png",
         techStack: ["AI", "RAG", "AWS"],
         achievements: [
-            "Contributed to the development of an AI agent that enables service technicians to quickly access equipment information and receive troubleshooting and repair guidance.",
-            "Developed a Taskfile-based automation workflow to validate AWS Bedrock Guardrails through, testing prompt-injection,  data-leakage, and information exposure scenarios before deployment."
+            "Contributed to the development of a Service AI that enables service technicians to quickly access equipment information and receive troubleshooting and repair guidance.",
+            "Applied PaCMAP to reduce embedding dimensions (1024 → 5) and clustered knowledge articles into 7 semantic topics using HDBSCAN for a structured knowledge base.",
+            "Developed a multi-stage evaluation pipeline combining DBCV, noise ratio, and LLM-based evaluation to assess clustering quality and downstream retrieval performance.",
+            "Built a CloudWatch dashboard for AWS Bedrock Guardrails testing by aggregating testing logs into 5+ visualization widgets, improving monitoring of guardrail evaluation results."
         ]
     },
     {

@@ -14,6 +14,20 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
+    title: "Mini-LangChain",
+    role: "Owner",
+    description: "Python, Gemini API, RAG, ReAct, ChromaDB",
+    achievements: [
+        "Built a LangChain-like LLM application framework from scratch in Python, implementing core patterns including chain pipelines, RAG, ReAct agents, and hybrid memory systems.",
+        "Designed provider-agnostic architecture using abstract interfaces, enabling seamless swapping of LLM providers (Gemini, OpenAI), vector databases (InMemory, ChromaDB, Pinecone), and embedding models without code changes.",
+        "Implemented a hybrid memory system combining short-term buffer with long-term vector store retrieval, keeping token usage bounded while maintaining full conversational recall.",
+        "Integrated Google Gemini API for real-time text generation and semantic embeddings, with ChromaDB for persistent local vector storage in a working RAG pipeline."
+    ],
+    link: "https://github.com/EuljeHoon/mini-langchain.git",
+    projectImage: "/logo/umn_logo.png"
+  },
+  {
+    id: 2,
     title: "University Course Scheduling",
     role: "Contributor",
     description: "Python, Google Colab",
@@ -25,9 +39,9 @@ export const projects: Project[] = [
     link: "https://github.com/EuljeHoon/course-scheduler-csp",
     articleLink: "https://drive.google.com/file/d/17ePx45tCTg0H-fiQfF81JtXiX-ZCzgmu/view?usp=sharing",
     projectImage: "/logo/umn_logo.png"
-    },
-    {
-    id: 2,
+  },
+  {
+    id: 3,
     title: "Dotori College Essay Assistant (In Progress)",
     role: "As a Founder & Software Engineer, leaded motivated group of 4 people to innovate education.",
     description: "Next.js, Spring Boot, PostgreSQL",
@@ -40,9 +54,9 @@ export const projects: Project[] = [
     backendLink: "https://github.com/EuljeHoon/dotori-backend.git",
     frontendLink: "https://github.com/EuljeHoon/dotori-web.git",
     projectImage: "/projects/dotori.png"
-   },
-   {
-    id: 3,
+  },
+  {
+    id: 4,
     title: "GPU Image Editor",
     role: "Image Editor project using OpenGL(GPU Acceleration)",
     description: "C++, GLSL, Object-oriented Programming",
@@ -54,9 +68,9 @@ export const projects: Project[] = [
     ],
     link: "https://github.com/EuljeHoon/GPU_Image_Editor.git",
     projectImage: "/projects/GPUImage.png"
-   },
-   {
-    id: 4,
+  },
+  {
+    id: 5,
     title: "Jehoon Portfolio",
     role: "Jehoon's Portfolio webste by Next.js and Tailwind CSS",
     description: "Next.js, Tailwind CSS",
@@ -68,9 +82,9 @@ export const projects: Project[] = [
     ],
     link: "https://github.com/EuljeHoon/jehoon_website.git",
     projectImage: "/projects/jehoon_website.png"
-   },
-   {
-    id: 5,
+  },
+  {
+    id: 6,
     title: "Assembly-Level Bit Manipulation",
     role: "Assembly-Level Bit Manipulation project",
     description: "Assembly, C, MakeFile",
@@ -84,7 +98,7 @@ export const projects: Project[] = [
     projectImage: "/projects/Assembly.png"
   },
   {
-    id: 6,
+    id: 7,
     title: "Chess Game",
     role: "Terminal-based Java Project",
     description: "Java",
@@ -98,7 +112,7 @@ export const projects: Project[] = [
     projectImage: "/projects/Chess.png"
   },
   {
-    id: 7,
+    id: 8,
     title: "Block Maze Game",
     role: "Java-swing based Project",
     description: "Java, Swing, OOP",
