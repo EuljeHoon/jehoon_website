@@ -23,16 +23,16 @@ export const experiences: Experience[] = [
         logo: "/logo/bobcat_logo.png",
         techStack: ["AI", "RAG", "AWS"],
         achievements: [
-            "Contributed to the development of a Service AI that enables service technicians to quickly access equipment information and receive troubleshooting and repair guidance.",
-            "Applied PaCMAP to reduce embedding dimensions (1024 → 5) and clustered knowledge articles into 7 semantic topics using HDBSCAN for a structured knowledge base.",
-            "Developed a multi-stage evaluation pipeline combining DBCV, noise ratio, and LLM-based evaluation to assess clustering quality and downstream retrieval performance.",
-            "Built a CloudWatch dashboard for AWS Bedrock Guardrails testing by aggregating testing logs into 5+ visualization widgets, improving monitoring of guardrail evaluation results."
+            "Built a configuration-sweep evaluation pipeline for Service AI clusters across Snowflake-to-S3 workflows",
+            "Improved retrieval relevance by organizing 900K+ embeddings into topic-aligned clusters using HDBSCAN",
+            "Reduced cluster noise from 50% to 30% with medoid-guided, LLM-validated outlier reassignment",
+            "Implemented ARI-based stability testing, filtering out 60% of unstable candidate clustering configurations"
         ]
     },
     {
         id: 2,
         title: "University of Colorado Denver, Lee Group",
-        role: "Research Assistant Developer",
+        role: "Software Development Intern",
         startDate: "2025-06-01",
         endDate: "2026-03-16",
         description: "Developed Poky plug-in application.",
@@ -40,10 +40,10 @@ export const experiences: Experience[] = [
         logo: "/logo/cuDenver.png",
         techStack: ["Python", "GUI", "Tkinter", "AI Models(ESMFold, BOLTZ, CHAI)"],
         achievements: [
-            "Developed POKY, an AI-driven platform for automated protein structure prediction and analysis.",
-            "Engineered an automated AI pipeline integrating multiple structure prediction models (ESMFold, Boltz-1, Chai-1) as modular tools, enabling seamless end-to-end processing of protein sequences.",
-            "Developed a Python-based scoring algorithm to match predicted spectra with BMRB data and rank optimal structures based on experimental reference data.",
-            "Reduced system latency by 60%(5m → 2m) by Python multiprocessing to parallelize high-compute analysis tools, improving throughput for large-scale data processing."
+            "Built an S3-based vector memory layer for AI-generated protein structures, replacing local file retrieval",
+            "Reduced memory usage by 40% by optimizing AWS Cohere embedding dimensions for similarity retrieval",
+            "Reduced system latency by 60% (20m → 8m) using multiprocessing to parallelize ML model inference pipelines",
+            "Built embedding-space visualizations using Matplotlib and PaCMAP (512D → 2D) for model monitoring"
         ]
     },
     {
