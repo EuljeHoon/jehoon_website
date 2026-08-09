@@ -30,7 +30,7 @@ export default function Hero() {
               GitHub
             </span>
           </a>
-          <a href = "https://drive.google.com/file/d/1xc0yjE9P6n5z9ZcfH4OfA4nLeSFTwagj/view?usp=sharing" download target = "_blank" rel = "noopener noreferrer" className="group relative">
+          <a href = "https://drive.google.com/file/d/1qoNjDVn5KgGy0d5wgpdU51ZrMYYvkRjR/view?usp=sharing" download target = "_blank" rel = "noopener noreferrer" className="group relative">
             <Button className="bg-black hover:bg-[#FFCC33] text-white p-3 rounded-full">
               <FileText className="w-5 h-5" />
             </Button>
