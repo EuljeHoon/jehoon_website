@@ -24,7 +24,7 @@ export const projects: Project[] = [
         "Integrated Google Gemini API for real-time text generation and semantic embeddings, with ChromaDB for persistent local vector storage in a working RAG pipeline."
     ],
     link: "https://github.com/EuljeHoon/mini-langchain.git",
-    projectImage: "/logo/umn_logo.png"
+    projectImage: "/logo/langchain-color.png"
   },
   {
     id: 2,

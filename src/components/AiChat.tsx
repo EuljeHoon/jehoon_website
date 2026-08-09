@@ -56,7 +56,7 @@ export default function AiChat() {
   };
 
   return (
-    <div className="mx-auto w-full max-w-2xl rounded-3xl border border-gray-200 bg-white p-5 shadow-sm">
+    <div className="mx-auto w-full max-w-2xl rounded-2xl border border-gray-200 bg-white p-3 shadow-sm sm:rounded-3xl sm:p-5">
       <h2 className="mb-4 flex items-center gap-2 text-lg font-medium text-gray-800">
         <Image
           src="/gemini-logo.png"
@@ -71,18 +71,18 @@ export default function AiChat() {
         </span>
       </h2>
 
-      <div className="rounded-3xl border border-gray-200 bg-gray-50 px-3 py-2 shadow-inner">
+      <div className="rounded-3xl border border-gray-200 bg-gray-50 p-3 shadow-inner">
         <div className="flex items-center gap-2">
           <button
             type="button"
-            className="h-9 w-9 rounded-full text-lg text-gray-500 transition hover:bg-gray-200"
+            className="h-9 w-9 shrink-0 rounded-full text-lg text-gray-500 transition hover:bg-gray-200"
             aria-label="Attach"
           >
             +
           </button>
 
           <input
-            className="h-10 flex-1 bg-transparent px-2 text-gray-800 placeholder:text-gray-500 focus:outline-none"
+            className="h-10 min-w-0 flex-1 bg-transparent px-1 text-sm text-gray-800 placeholder:text-gray-500 focus:outline-none sm:px-2 sm:text-base"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             onKeyDown={(e) => {
@@ -97,9 +97,16 @@ export default function AiChat() {
           <button
             onClick={sendMessage}
             disabled={loading || !message.trim()}
-            className="h-9 rounded-full bg-gray-900 px-4 text-sm font-medium text-white transition hover:bg-black disabled:cursor-not-allowed disabled:bg-gray-300"
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-900 text-sm font-medium text-white transition hover:bg-black disabled:cursor-not-allowed disabled:bg-gray-300 sm:w-auto sm:px-4"
+            aria-label="Send message"
           >
-            {loading ? "Thinking..." : "Send"}
+            <span className="sm:hidden">
+              {loading ? "..." : "↑"}
+            </span>
+
+            <span className="hidden sm:inline">
+              {loading ? "Thinking..." : "Send"}
+            </span>
           </button>
         </div>
       </div>
