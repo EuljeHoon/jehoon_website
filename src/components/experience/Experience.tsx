@@ -49,15 +49,7 @@ export default function Experiences() {
 
     const calculateDuration = (startDateStr: string, endDateStr: string) => {
         if (endDateStr === "Present") {
-            const start = new Date(startDateStr);
-            const now = new Date();
-            let months = (now.getFullYear() - start.getFullYear()) * 12;
-            months -= start.getMonth();
-            months += now.getMonth();
-            if (now.getDate() < start.getDate()) {
-                months--;
-            }
-            return months <= 0 ? "Ongoing" : `${months} month${months > 1 ? 's' : ''}`;
+            return "Ongoing";
         }
         
         const [s_year, s_month, s_day] = startDateStr.split('-').map(Number);

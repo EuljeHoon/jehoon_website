@@ -17,7 +17,7 @@ export const experiences: Experience[] = [
         title: "Bobcat Company",
         role: "AI Engineering Intern",
         startDate: "2026-06-15",
-        endDate: "2026-08-28",
+        endDate: "Present",
         description: "Designing, developing, and deploying an AI service agent.",
         link: "https://www.bobcat.com/na/en",
         logo: "/logo/bobcat_logo.png",
@@ -27,6 +27,22 @@ export const experiences: Experience[] = [
             "Improved retrieval relevance by organizing 900K+ embeddings into topic-aligned clusters using HDBSCAN",
             "Reduced cluster noise from 50% to 30% with medoid-guided, LLM-validated outlier reassignment",
             "Implemented ARI-based stability testing, filtering out 60% of unstable candidate clustering configurations"
+        ]
+    },
+    {
+        id: 0,
+        title: "Knowledge Computing Lab, University of Minnesota - Twin Cities",
+        role: "Research Assistant",
+        startDate: "2026-09-01",
+        endDate: "Present",
+        description: "Researching spatial time-series forecasting for regional unemployment using graph-based deep learning.",
+        link: "https://knowledge-computing.github.io/index.html",
+        logo: "/logo/umn_logo.png",
+        techStack: ["Time Series Forecasting", "Graph Neural Networks", "Python", "Deep Learning"],
+        achievements: [
+            "Analyzed 34 years of county level unemployment data, uncovering regional shock patterns that motivated spatial forecasting.",
+            "Combined a pretrained time series model with a graph based module to propagate signals across linked regions.",
+            "Developed an evaluation protocol (MAE, MAPE, R²) comparing accuracy during economic crises and stable periods."
         ]
     },
     {

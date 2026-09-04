@@ -98,6 +98,8 @@ npm run dev
 
 - **Section-based Layout**: Hero, About, Experience, Projects, Skills, Contact
 - **Modal Functionality**: Detailed experience information display
+- **AI Chat**: Ask questions about Jehoon's background, powered by a separate backend
+- **Backend Warm-up**: Pre-wakes the free-tier chat backend to hide cold-start latency
 - **Contact Form**: Email sending via EmailJS
 - **Responsive Layout**: Support for all devices
 - **Sliding Animations**: CSS animations with Intersection Observer for Experience timeline
@@ -118,6 +120,47 @@ npm run dev
 **Staggered Timing**: Each item animates with a 0.2-second delay after the previous one, creating a smooth sequential reveal effect.
 
 **CSS Transforms**: Uses translateX and opacity transitions for smooth, hardware-accelerated animations that perform well on all devices.
+
+## AI Chat Backend Warm-up
+
+The AI chat feature (`src/components/AiChat.tsx`) talks to a separate backend
+hosted on Render's free tier (`https://portfolio-ai-chat.onrender.com`). On the
+free tier, the backend spins down after ~15 minutes of inactivity, so the first
+request after idle triggers a cold start that can take 30 seconds or more.
+
+To hide this latency from users, the frontend pre-warms the backend before a
+message is ever sent.
+
+### How It Works
+
+**Warm-up on mount**: When the chat component loads, it sends a lightweight
+`GET /health/` request to the backend in the background. This kicks off the
+cold start while the visitor is still reading other sections of the page.
+
+**Warm-up on focus**: When the user focuses the chat input, the warm-up runs
+again, covering cases where the initial request happened too long ago.
+
+**Single-shot guard**: A `warmedRef` flag ensures the warm-up fires only once
+per session, avoiding duplicate requests.
+
+**Fire-and-forget**: The warm-up request ignores its response and silently
+swallows errors. Its only purpose is to trigger the server's cold start early,
+not to fetch data. Even if `/health/` returns 404, the request still wakes the
+server.
+
+### Backend Requirement
+
+The backend exposes a `GET /health/` endpoint that returns an immediate,
+lightweight `200` response without calling the AI model or touching the
+database. This keeps the warm-up fast and cheap while still waking the process.
+
+### Why Not a Cron Job
+
+A free external cron pinging the backend every ~14 minutes could keep it awake
+permanently, but Render's free tier caps instance run time at ~750 hours/month.
+Keeping the server awake around the clock would consume nearly the entire
+monthly allowance, so the on-demand warm-up above was chosen instead — it hides
+cold starts for real visitors without burning the free-tier budget.
 
 ## Performance Optimization
 

@@ -1,7 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
+
+const BACKEND_URL = "https://portfolio-ai-chat.onrender.com";
 
 export default function AiChat() {
   const headingText = "Ask Gemini about Jehoon's background!";
@@ -9,6 +11,28 @@ export default function AiChat() {
   const [answer, setAnswer] = useState("");
   const [loading, setLoading] = useState(false);
   const [typedHeading, setTypedHeading] = useState("");
+  const warmedRef = useRef(false);
+
+  // Ping the backend so Render's free-tier instance wakes up before the
+  // user actually sends a message. Runs once on mount and again on first
+  // focus of the input. Failures are ignored on purpose since the only
+  // goal is to trigger a cold start early.
+  const warmUpBackend = useCallback(() => {
+    if (warmedRef.current) return;
+    warmedRef.current = true;
+
+    fetch(`${BACKEND_URL}/health/`, {
+      method: "GET",
+      // We don't care about the response, only that the request wakes the server.
+      cache: "no-store",
+    }).catch(() => {
+      // Ignore: the request itself is enough to start the cold boot.
+    });
+  }, []);
+
+  useEffect(() => {
+    warmUpBackend();
+  }, [warmUpBackend]);
 
   useEffect(() => {
     let index = 0;
@@ -41,7 +65,7 @@ export default function AiChat() {
 
     setLoading(true);
 
-    const res = await fetch("https://portfolio-ai-chat.onrender.com/api/chat/", {
+    const res = await fetch(`${BACKEND_URL}/api/chat/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -85,6 +109,7 @@ export default function AiChat() {
             className="h-10 min-w-0 flex-1 bg-transparent px-1 text-sm text-gray-800 placeholder:text-gray-500 focus:outline-none sm:px-2 sm:text-base"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            onFocus={warmUpBackend}
             onKeyDown={(e) => {
               if (e.key === "Enter") {
                 e.preventDefault();
