@@ -25,8 +25,8 @@ export const experiences: Experience[] = [
         achievements: [
             "Built a configuration-sweep evaluation pipeline for Service AI clusters across Snowflake-to-S3 workflows",
             "Improved retrieval relevance by organizing 900K+ embeddings into topic-aligned clusters using HDBSCAN",
-            "Reduced cluster noise from 50% to 30% with medoid-guided, LLM-validated outlier reassignment",
-            "Implemented ARI-based stability testing, filtering out 60% of unstable candidate clustering configurations"
+            "Enabled hierarchical cluster evaluation by designing a GPT-Sol, medoid-based cluster labeling pipeline for 1K+ clusters",
+            "Reduced cluster noise from 50% to 30% by reassigning noise embeddings through LLM-based cluster-fit evaluation"
         ]
     },
     {
