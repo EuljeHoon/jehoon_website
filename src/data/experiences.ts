@@ -25,7 +25,7 @@ export const experiences: Experience[] = [
         achievements: [
             "Built a configuration-sweep evaluation pipeline for Service AI clusters across Snowflake-to-S3 workflows",
             "Improved retrieval relevance by organizing 900K+ embeddings into topic-aligned clusters using HDBSCAN",
-            "Enabled hierarchical cluster evaluation by designing a GPT-Sol, medoid-based cluster labeling pipeline for 1K+ clusters",
+            "Enabled hierarchical cluster evaluation by designing a GPT-Luna, medoid-based cluster labeling pipeline for 1K+ clusters",
             "Reduced cluster noise from 50% to 30% by reassigning noise embeddings through LLM-based cluster-fit evaluation"
         ]
     },
@@ -47,7 +47,7 @@ export const experiences: Experience[] = [
     },
     {
         id: 2,
-        title: "University of Colorado Denver, Lee Group",
+        title: "University of Colorado Denver",
         role: "Software Development Intern",
         startDate: "2025-06-01",
         endDate: "2026-03-16",

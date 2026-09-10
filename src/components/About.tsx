@@ -23,12 +23,12 @@ export default function About() {
 
           <div className="mt-6 rounded-2xl border border-slate-100 bg-slate-50 p-4 text-slate-700">
             <p className="mb-2">
-              I&apos;m a Computer Science major at the University of Minnesota - Twin Cities, focused
-              on building reliable software that creates practical impact.
+              I&apos;m a Computer Science major at the University of Minnesota - Twin Cities, focused on 
+              building LLM-powered systems and applying machine learning to real-world problems.
             </p>
             <p>
-              This portfolio highlights projects and experiences that reflect both technical depth
-              and thoughtful problem solving.
+              My experience spans RAG, AI agents, retrieval and evaluation pipelines, and 
+              large-scale embedding analysis, with a particular interest in building reliable and scalable AI systems.
             </p>
           </div>
         </div>

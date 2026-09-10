@@ -19,7 +19,7 @@ export default function Hero() {
           CS Student @ U of M Twin Cities
         </p>
         <p className="mt-2 text-lg max-w-xl mx-auto">
-        A Computer Science student in the Computer Systems track, passionate about building reliable and impactful software.
+          A Computer Science student passionate about building reliable and scalable AI/ML systems that solve real-world problems.
         </p>
         <div className="mt-6 flex justify-center gap-4">
           <a href = "https://github.com/EuljeHoon" target = "_blank" rel = "noopener noreferrer" className="group relative">
