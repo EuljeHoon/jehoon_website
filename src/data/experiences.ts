@@ -15,7 +15,7 @@ export const experiences: Experience[] = [
     {
         id: 1,
         title: "Bobcat Company",
-        role: "Machine Learning Engineering Intern",
+        role: "Software Engineering Intern",
         startDate: "2026-06-15",
         endDate: "Present",
         description: "Designing, developing, and evaluating a Service AI assistant for technicians at Bobcat dealerships.",
@@ -23,6 +23,10 @@ export const experiences: Experience[] = [
         logo: "/logo/bobcat_logo.png",
         techStack: ["AI", "ML", "Embeddings", "AWS", "Bedrock", "Sagemaker", "RAG"],
         achievements: [
+            "Built an AI troubleshooting assistant for Bobcat technicians to diagnose equipment failures from reported symptoms",
+            "Developed an automated evaluation pipeline with 5 evaluators across 17 scenarios, catching 7 prompt regressions",
+            "Eliminated session races with cached turn serialization, achieving 99.3% single container routing across 6.7K sessions",
+            "Fixed diagnostic guide ingestion failures by reducing chunk metadata from 13 fields to 5 under a 1024 byte limit",
             "Built a configuration-sweep evaluation pipeline for Service AI clusters across Snowflake-to-S3 workflows",
             "Improved retrieval relevance by organizing 900K+ embeddings into topic-aligned clusters using HDBSCAN",
             "Enabled hierarchical cluster evaluation by designing a GPT-Luna, medoid-based cluster labeling pipeline for 1K+ clusters",
@@ -40,15 +44,15 @@ export const experiences: Experience[] = [
         logo: "/logo/umn_logo.png",
         techStack: ["Time Series Forecasting", "Graph Neural Networks", "Python", "Deep Learning"],
         achievements: [
-            "Analyzed 34 years of county level unemployment data, uncovering regional shock patterns that motivated spatial forecasting.",
-            "Combined a pretrained time series model with a graph based module to propagate signals across linked regions.",
-            "Developed an evaluation protocol (MAE, MAPE, R²) comparing accuracy during economic crises and stable periods."
+            "Enabled explainable county level unemployment forecasting with a graph enhanced reasoning agent",
+            "Improved forecasting accuracy through a PyTorch graph fusion module that propagates signals across spatial graphs",
+            "Enabled forecast and agent reasoning through a knowledge graph linking counties, industries, and economic shocks"
         ]
     },
     {
         id: 2,
         title: "University of Colorado Denver",
-        role: "Software Development Intern",
+        role: "Software Engineering Intern",
         startDate: "2025-06-01",
         endDate: "2026-03-16",
         description: "Developed Poky plug-in application.",
@@ -99,7 +103,7 @@ export const experiences: Experience[] = [
     {
         id: 5,
         title: "Gallery Soma",
-        role: "Software Engineer Intern",
+        role: "Software Engineering Intern",
         startDate: "2022-05-31",
         endDate: "2022-07-31",
         description: "Created a website for art gallery in Goyang, South Korea.",
