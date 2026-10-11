@@ -5,7 +5,7 @@ Personal portfolio website built with Next.js 15 and TypeScript, deployed on Ver
 ## Deployment Information
 
 - **Deployment Platform**: Vercel
-- **Live URL**: https://jehoon-website.vercel.app/
+- **Live URL**: https://parkjehoon.com/
 - **Deployment Method**: Automatic deployment via GitHub repository integration with Vercel
 
 ## 📁 Project Structure
