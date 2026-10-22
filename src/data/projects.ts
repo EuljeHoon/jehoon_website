@@ -14,6 +14,19 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
+    title: "GPU Wave Simulator",
+    role: "Owner",
+    description: "GPU, OpenGL, C++, GLSL, Object-oriented Programming",
+    achievements: [
+        "Built a realtime C++ image editor with a custom OpenGL rendering pipeline and GLSL shaders",
+        "Implemented click-based wave propagation by solving a finite-difference wave equation on a 2D grid",
+        "Added a CPU vs GPU render path with FPS instrumentation to compare rendering performance"
+    ],
+    link: "https://github.com/EuljeHoon/GPU_Wave_Simulator",
+    projectImage: "/projects/GPUImage.png"
+  },
+  {
+    id: 2,
     title: "Mini-LangChain",
     role: "Owner",
     description: "Python, Gemini API, RAG, ReAct, ChromaDB",
@@ -27,7 +40,7 @@ export const projects: Project[] = [
     projectImage: "/logo/langchain-color.png"
   },
   {
-    id: 2,
+    id: 3,
     title: "University Course Scheduling",
     role: "Contributor",
     description: "Python, Google Colab",
@@ -41,7 +54,7 @@ export const projects: Project[] = [
     projectImage: "/logo/umn_logo.png"
   },
   {
-    id: 3,
+    id: 4,
     title: "Dotori College Essay Assistant (In Progress)",
     role: "As a Founder & Software Engineer, leaded motivated group of 4 people to innovate education.",
     description: "Next.js, Spring Boot, PostgreSQL",
@@ -54,20 +67,6 @@ export const projects: Project[] = [
     backendLink: "https://github.com/EuljeHoon/dotori-backend.git",
     frontendLink: "https://github.com/EuljeHoon/dotori-web.git",
     projectImage: "/projects/dotori.png"
-  },
-  {
-    id: 4,
-    title: "GPU Image Editor",
-    role: "Image Editor project using OpenGL(GPU Acceleration)",
-    description: "C++, GLSL, Object-oriented Programming",
-    achievements: [
-        "Developed a GPU-accelerated image editor that allows draw and erase on images with customizable RGB colors.",
-        "Implemented the copy constructor, assignment operator, and destructor for 7+ classes for memory management.",
-        "Developed an OpenGL-based graphics application leveraging GPU s, implementing custom shaders and optimized texture handling for real-time rendering.",
-        "Used OpenGL VAO, VBO, and EBO buffers to optimize GPU rendering speed by 90%."
-    ],
-    link: "https://github.com/EuljeHoon/GPU_Image_Editor.git",
-    projectImage: "/projects/GPUImage.png"
   },
   {
     id: 5,

@@ -23,14 +23,11 @@ export const experiences: Experience[] = [
         logo: "/logo/bobcat_logo.png",
         techStack: ["AI", "ML", "Embeddings", "AWS", "Bedrock", "Sagemaker", "RAG"],
         achievements: [
-            "Built an AI troubleshooting assistant for Bobcat technicians to diagnose equipment failures from reported symptoms",
+            "Collaborated with service engineers to build an AI diagnostic assistant for reported equipment failures",
             "Developed an automated evaluation pipeline with 5 evaluators across 17 scenarios, catching 7 prompt regressions",
-            "Eliminated session races with cached turn serialization, achieving 99.3% single container routing across 6.7K sessions",
-            "Fixed diagnostic guide ingestion failures by reducing chunk metadata from 13 fields to 5 under a 1024 byte limit",
-            "Built a configuration-sweep evaluation pipeline for Service AI clusters across Snowflake-to-S3 workflows",
-            "Improved retrieval relevance by organizing 900K+ embeddings into topic-aligned clusters using HDBSCAN",
-            "Enabled hierarchical cluster evaluation by designing a GPT-Luna, medoid-based cluster labeling pipeline for 1K+ clusters",
-            "Reduced cluster noise from 50% to 30% by reassigning noise embeddings through LLM-based cluster-fit evaluation"
+            "Reduced exposure of sensitive runtime data by automating CloudWatch log retention across AgentCore deployments",
+            "Resolved silent ingestion drops by redesigning metadata from 13 to 5 retrieval-critical fields under a 1,024-byte limit",
+            "Eliminated overlapping request execution within chat sessions through per-session request serialization, achieving 99.3% session affinity across 6.7K sessions"
         ]
     },
     {
@@ -46,7 +43,7 @@ export const experiences: Experience[] = [
         achievements: [
             "Enabled explainable county level unemployment forecasting with a graph enhanced reasoning agent",
             "Improved forecasting accuracy through a PyTorch graph fusion module that propagates signals across spatial graphs",
-            "Enabled forecast and agent reasoning through a knowledge graph linking counties, industries, and economic shocks"
+            "Built a knowledge graph linking counties and industries to provide additional context for agent reasoning"
         ]
     },
     {
@@ -58,7 +55,7 @@ export const experiences: Experience[] = [
         description: "Developed Poky plug-in application.",
         link: "https://sites.google.com/view/pokynmr",
         logo: "/logo/cuDenver.png",
-        techStack: ["Python", "GUI", "Tkinter", "AI Models(ESMFold, BOLTZ, CHAI)"],
+        techStack: ["Python", "GUI", "Tkinter", "AWS", "AI", "RAG"],
         achievements: [
             "Built an S3-based vector memory layer for AI-generated protein structures, replacing local file retrieval",
             "Reduced memory usage by 40% by optimizing AWS Cohere embedding dimensions for similarity retrieval",
@@ -77,10 +74,10 @@ export const experiences: Experience[] = [
         logo: "/logo/Main_logo_invisible _back.png",
         techStack: ["Java", "Spring Boot", "React", "RESTful API", "JWT", "PostgreSQL"],
         achievements: [
-            "Led a 4-person Agile team to build an AI-powered platform that delivers personalized college essay feedback.",
-            "Implemented a RAG pipeline that embeds user essays and retrieves similar admitted essays from Pinecone.",
-            "Reduced token overhead by 35% by implementing JIT fetching via MCP, bypassing context limits for large-scale Databricks datasets.",
-            "Designed a multi-agent pipeline separating similarity search, essay analysis, and feedback generation, reducing LLM’s context size by up to 50% and improving feedback relevance."
+            "Led a 4-person Agile team to build an AI-powered platform that delivers personalized college essay feedback",
+            "Implemented a RAG pipeline that embeds user essays and retrieves similar admitted essays from Pinecone",
+            "Reduced token overhead by 35% by implementing JIT fetching via MCP, bypassing context limits for large-scale Databricks datasets",
+            "Designed a multi-agent pipeline separating similarity search, essay analysis, and feedback generation, reducing LLM’s context size by up to 50% and improving feedback relevance"
         ]
     },
     {
@@ -94,10 +91,10 @@ export const experiences: Experience[] = [
         logo: "roka.png",
         techStack: ["TICN", "VoIP", "Network Equipment"],
         achievements: [
-            "Operated tactical communication networks (TICN) across LAN/WAN supporting multiple military units.",
-            "Configured iptables firewall rules on a Linux server to restrict unauthorized access.",
-            "Configured IP addressing and subnet masks to support communication between networked systems within TICN.",
-            "Installed and maintained optical cable connections to support high-speed network communication."
+            "Operated tactical communication networks (TICN) across LAN/WAN supporting multiple military units",
+            "Configured iptables firewall rules on a Linux server to restrict unauthorized access",
+            "Configured IP addressing and subnet masks to support communication between networked systems within TICN",
+            "Installed and maintained optical cable connections to support high-speed network communication"
         ]
     },
     {
@@ -111,10 +108,9 @@ export const experiences: Experience[] = [
         logo: "/logo/soma.png",
         techStack: ["React", "Redux", "Tailwind", "Figma", "RESTful API", "AWS"],
         achievements: [
-            "Managed global state using Redux to optimize data flow and reduce redundant logic by 30%.",
-            "Implemented RestAPI requests in JavaScript to fetch artworks, events, and artist data.",
-            "Implemented JWT authentication with HttpOnly cookies, mitigating XSS risks and improving session persistence.",
-            "Delivered images through AWS CloudFront CDN, improving load performance and reducing latency."
+            "Built a React/Redux web application for browsing artworks, artists, and gallery events with centralized application state",
+            "Developed Express.js REST APIs and integrated them with React to serve and render dynamic gallery content",
+            "Implemented JWT authentication in Spring Boot with HttpOnly cookies, mitigating XSS risks"
         ]
     }
 ]; 
